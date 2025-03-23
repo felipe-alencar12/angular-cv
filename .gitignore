@@ -1,0 +1,34 @@
+# Node modules
+/node_modules/
+
+# Angular build artifacts
+/dist/
+/out-tsc/
+/*.js
+/*.map
+/**/*.js.map
+/**/*.css.map
+
+# IDE specific files
+/.idea/
+/.vscode/
+
+# Dependency directories
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Environment files
+/src/environments/environment*.ts
+
+# Coverage
+/coverage/
+
+# Angular cache
+/.angular/
+
+# Temporary files
+/.tmp/
+
+# Log files
+*.log
