@@ -4,6 +4,11 @@ import { HeaderComponent } from "../header/header.component";
 import { AboutComponent } from "../about/about.component";
 import { ContactComponent } from "../contact/contact.component";
 import { ExperienceComponent } from "../experience/experience.component";
+import { EducationComponent } from "../education/education.component";
+import { CommonModule } from "@angular/common";
+import { NzGridModule } from "ng-zorro-antd/grid";
+import { NzIconModule } from "ng-zorro-antd/icon";
+import { NzLayoutModule } from "ng-zorro-antd/layout";
 
 @Component({
   selector: "app-host",
@@ -13,6 +18,11 @@ import { ExperienceComponent } from "../experience/experience.component";
     AboutComponent,
     ContactComponent,
     ExperienceComponent,
+    EducationComponent,
+    NzLayoutModule,
+    NzGridModule,
+    CommonModule,
+    NzIconModule,
   ],
   templateUrl: "./host.component.html",
   styleUrl: "./host.component.less",
