@@ -4,7 +4,19 @@
       <h2>Contact Information</h2>
       <div nz-row [nzGutter]="16">
         <div nz-col nzSpan="12" *ngFor="let item of contactItems">
-          <span class="contact-item">
+          <span
+            class="contact-item"
+            [ngStyle]="item.style ? { cssText: item.style } : {}"
+          >
+            <!-- Render the icon only if it exists -->
+            <span *ngIf="item.icon">
+              <nz-icon
+                [nzType]="item.icon"
+                nzTheme="outline"
+                style="margin-right: 8px"
+              ></nz-icon>
+            </span>
+            <!-- Render the value, with or without a link -->
             <span class="contact-value">
               <span *ngIf="item.link; else noLink">
                 <a
