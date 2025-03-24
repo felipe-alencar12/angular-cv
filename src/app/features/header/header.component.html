@@ -1,8 +1,4 @@
 <ul nz-menu nzMode="horizontal">
-  <li nz-menu-item nzSelected>
-    <nz-icon nzType="code" nzTheme="outline" />
-    Resume
-  </li>
   <li nz-menu-item>
     <nz-icon nzType="linkedin" nzTheme="outline" />
     <a
@@ -10,8 +6,8 @@
       target="_blank"
       rel="noopener noreferrer"
     >
-      Linkedin - Link</a
-    >
+      Linkedin - Link
+    </a>
   </li>
   <li nz-menu-item>
     <nz-icon nzType="github" nzTheme="outline" />
@@ -20,7 +16,11 @@
       target="_blank"
       rel="noopener noreferrer"
     >
-      GitHub - Link</a
-    >
+      GitHub - Link
+    </a>
+  </li>
+  <li nz-menu-item (click)="toggleLanguage()" nzSelected>
+    <nz-icon nzType="code" nzTheme="outline" />
+    {{ language === "en" ? "Switch to Portuguese" : "Mudar para Inglês" }}
   </li>
 </ul>

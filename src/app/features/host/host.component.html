@@ -1,11 +1,11 @@
-<app-header></app-header>
+<app-header (click)="toggleLanguage()"></app-header>
 <nz-layout>
   <nz-content>
     <div class="main-container">
       <!-- Left Column (Contact, About, Experience) -->
       <div nz-row [nzGutter]="16">
         <div nz-col nzSpan="8">
-          <app-contact></app-contact>
+          <app-contact [language]="language"></app-contact>
           <app-about></app-about>
           <app-experience></app-experience>
         </div>

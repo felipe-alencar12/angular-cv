@@ -1,5 +1,5 @@
 import { CommonModule } from "@angular/common";
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 import { NzGridModule } from "ng-zorro-antd/grid";
 import { NzIconModule } from "ng-zorro-antd/icon";
 import { NzLayoutModule } from "ng-zorro-antd/layout";
@@ -11,6 +11,8 @@ import { NzLayoutModule } from "ng-zorro-antd/layout";
   styleUrl: "./contact.component.less",
 })
 export class ContactComponent {
+  @Input() language: string = "en"; // Default to 'en'
+
   name: string = " Felipe Alencar";
   contact: string = "gia.comini@hotmail.com";
   country: string = "Brazil";
@@ -39,6 +41,32 @@ export class ContactComponent {
     },
     {
       value: "GitHub Profile",
+      link: "https://github.com/felipe-alencar12",
+      icon: "github",
+      style: "color: #333;",
+    },
+  ];
+
+  itemsDeContato = [
+    {
+      value: "Felipe Alencar Giacomini",
+      style: "font-size: 20px; font-weight: bold;color:#1890ff;",
+    },
+    {},
+    {
+      value: "gia.comini@hotmail.com",
+      style: "font-size: 16px;",
+    },
+    { value: "Brasil - São Paulo", style: "font-size: 16px;" },
+    { value: "+55 11 95119-2674", style: "font-size: 16px;" },
+    {
+      value: "Perfil LinkedIn",
+      link: "https://www.linkedin.com/in/felipealencar12/",
+      icon: "linkedin",
+      style: "color: #0e76a8;",
+    },
+    {
+      value: "Perfil GitHub",
       link: "https://github.com/felipe-alencar12",
       icon: "github",
       style: "color: #333;",

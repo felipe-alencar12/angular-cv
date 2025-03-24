@@ -10,6 +10,9 @@ import { NzIconModule } from "ng-zorro-antd/icon";
   styleUrl: "./header.component.less",
 })
 export class HeaderComponent {
-  title = "x";
-  subtitle = "y";
+  language: string = "en"; // 'en' for English, 'pt' for Portuguese
+
+  toggleLanguage() {
+    this.language = this.language === "en" ? "pt" : "en";
+  }
 }

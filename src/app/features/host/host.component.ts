@@ -29,4 +29,10 @@ import { SkillsComponent } from "../skills/skills.component";
   templateUrl: "./host.component.html",
   styleUrl: "./host.component.less",
 })
-export class HostComponent {}
+export class HostComponent {
+  language: string = "en";
+
+  toggleLanguage() {
+    this.language = this.language === "en" ? "pt" : "en";
+  }
+}
