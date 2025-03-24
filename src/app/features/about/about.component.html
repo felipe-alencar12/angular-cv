@@ -1,8 +1,17 @@
-<nz-layout>
+<nz-layout *ngIf="language == 'en'">
   <nz-content>
     <div class="about-container">
       <h2>About Me and Objectives</h2>
       <p>{{ aboutText }}</p>
+    </div>
+  </nz-content>
+</nz-layout>
+
+<nz-layout *ngIf="language == 'pt'">
+  <nz-content>
+    <div class="about-container">
+      <h2>Sobre mim e Objetivos</h2>
+      <p>{{ sobreTexto }}</p>
     </div>
   </nz-content>
 </nz-layout>
