@@ -1,1 +1,24 @@
-<p>contact works!</p>
+<nz-layout>
+  <nz-content>
+    <div class="contact-container">
+      <h2>Contact Information</h2>
+      <div nz-row [nzGutter]="16">
+        <div nz-col nzSpan="12" *ngFor="let item of contactItems">
+          <span class="contact-item">
+            <span class="contact-value">
+              <span *ngIf="item.link; else noLink">
+                <a
+                  [href]="item.link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >{{ item.value }}</a
+                >
+              </span>
+              <ng-template #noLink>{{ item.value }}</ng-template>
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nz-content>
+</nz-layout>
