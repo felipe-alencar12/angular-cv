@@ -9,6 +9,7 @@ import { CommonModule } from "@angular/common";
 import { NzGridModule } from "ng-zorro-antd/grid";
 import { NzIconModule } from "ng-zorro-antd/icon";
 import { NzLayoutModule } from "ng-zorro-antd/layout";
+import { SkillsComponent } from "../skills/skills.component";
 
 @Component({
   selector: "app-host",
@@ -23,6 +24,7 @@ import { NzLayoutModule } from "ng-zorro-antd/layout";
     NzGridModule,
     CommonModule,
     NzIconModule,
+    SkillsComponent,
   ],
   templateUrl: "./host.component.html",
   styleUrl: "./host.component.less",

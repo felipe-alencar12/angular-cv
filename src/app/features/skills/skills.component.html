@@ -1,0 +1,15 @@
+<div class="skills-container">
+  <h2>Skills</h2>
+  <p class="about-skills">
+    I have experience in a variety of technologies, ranging from front-end
+    development with Angular to cloud services using AWS. I continuously strive
+    to enhance my skills to stay up-to-date with the latest industry trends.
+  </p>
+
+  <div *ngFor="let skill of skills" class="skill">
+    <div class="skill-name">{{ skill.name }}</div>
+    <div class="skill-level">
+      <div class="progress-bar" [style.width.%]="skill.level"></div>
+    </div>
+  </div>
+</div>
