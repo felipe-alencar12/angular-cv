@@ -9,11 +9,25 @@ import { Component } from "@angular/core";
 })
 export class SkillsComponent {
   skills = [
-    { name: "Angular", level: 80 }, // level from 0 to 100
-    { name: "JavaScript", level: 85 },
-    { name: "CSS", level: 70 },
-    { name: "Java", level: 75 },
-    { name: "AWS", level: 60 },
-    { name: "Git", level: 90 },
+    {
+      name: "Angular",
+      description:
+        "I have extensive experience building dynamic, single-page applications using Angular, utilizing components, services, and reactive programming techniques.",
+    },
+    {
+      name: "JavaScript",
+      description:
+        "JavaScript is the backbone of my front-end development. I use it to create interactive and engaging web applications, especially with frameworks like Angular and React.",
+    },
+    {
+      name: "AWS",
+      description:
+        "I have worked with several AWS services including S3, EC2, and Lambda to deploy scalable and efficient cloud applications.",
+    },
+    {
+      name: "CSS",
+      description:
+        "CSS is essential for styling web applications. I am proficient in creating responsive layouts and ensuring cross-browser compatibility.",
+    },
   ];
 }

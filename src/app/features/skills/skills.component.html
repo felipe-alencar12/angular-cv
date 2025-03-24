@@ -8,8 +8,8 @@
 
   <div *ngFor="let skill of skills" class="skill">
     <div class="skill-name">{{ skill.name }}</div>
-    <div class="skill-level">
-      <div class="progress-bar" [style.width.%]="skill.level"></div>
+    <div class="skill-description">
+      <p>{{ skill.description }}</p>
     </div>
   </div>
 </div>
