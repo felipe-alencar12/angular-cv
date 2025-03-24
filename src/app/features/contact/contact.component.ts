@@ -22,8 +22,9 @@ export class ContactComponent {
   contactItems = [
     {
       value: "Felipe Alencar Giacomini",
-      style: "font-size: 20px; font-weight: bold;color:#0e76a8;",
+      style: "font-size: 20px; font-weight: bold;color:#1890ff;;",
     },
+    {},
     {
       value: "gia.comini@hotmail.com",
       style: "font-size: 16px;",

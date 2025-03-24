@@ -1,1 +1,18 @@
-<p>experience works!</p>
+<nz-layout>
+  <nz-content>
+    <div class="experience-container">
+      <h2>Professional Experience</h2>
+      <div nz-row [nzGutter]="16">
+        <div nz-col nzSpan="24" *ngFor="let experience of experiences">
+          <div class="experience-item">
+            <h3>{{ experience.company }}</h3>
+            <h4>
+              {{ experience.role }} | <span>{{ experience.duration }}</span>
+            </h4>
+            <p>{{ experience.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nz-content>
+</nz-layout>
